@@ -18,12 +18,15 @@ float perimetr(float s[], size_t len)
 int main()
 {
     float angles, S, Sb, V, H, P, L;
-    float h;
+    float h, p;
     printf("Введите количество углов основания пирамиды: ");
     scanf("%f", &angles);
     printf("\n");
     printf("Введите высоту пирамиды: ");
     scanf("%f", &H);
+    printf("\n");
+    printf("Введите плостность: ");
+    scanf("%f", &p);
     printf("\n");
     if (angles == 3 || angles == 4)
     {
@@ -69,6 +72,5 @@ int main()
     Sb = (1/2) * P * L;
     V = (1/3) * Sb * H;
     printf("Объем пирамиды: V = %.2f", V);
-    printf("Площадь поверхности пирамиды: S = %.2f", S + Sb);
     return 0;
 }
