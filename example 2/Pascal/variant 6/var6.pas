@@ -45,4 +45,5 @@ begin
   + SequentialResistance(resistences2group)
   + ParallelResistance(resistences3group);
   Write('Сопротивление цепи равно: ', CircuitResistance:0:3, ' Ом');
+  Read();
 end.
