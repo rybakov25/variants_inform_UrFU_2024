@@ -1,5 +1,5 @@
 ﻿var
-    a: array [1..1000] of integer;
+    a: array [1..8] of integer;
     chislo, k: integer;
     bin, sept: string;
     i, n: longint;
@@ -10,7 +10,7 @@ begin
     
     bin := IntToStr(chislo);
     
-    for i := 1 to 1000 do
+    for i := 1 to 8 do
     begin
         if (chislo mod 10) = 0 then
         begin
@@ -23,7 +23,7 @@ begin
             chislo := chislo div 10;
         end;
     end;
-    for i := 1 to 1000 do
+    for i := 1 to 8 do
     begin
         k := k + a[i] * n;
         n := n * 2;

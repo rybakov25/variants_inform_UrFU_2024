@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Прочти меня!</title>
+<style>
+.fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #000; /* Цвет подрисуночной подписи */
+}
+button {
+background-color: #eb1010;
+color: #fff;
+width: 300px;
+height: 25px;
+}
+</style>
+</head>
+<body>
+<p class="about">
+Матвей, программы написаны на Python.<br>
+Python у тебя в примере курсовой описан, ничего нового тебе придумывать не надо.<br>
+Просто удали из курсовой все упоминания паскаля и всё
+(ну и можешь что-нибудь дописать про Python если хочешь).<br>
+
+В качестве среды разработки можешь указать IDLE,<br>
+это IDE (и дэ е) для Python (если Миша спросит что такое IDLE, то так и говори что это Python IDE)
+</p>
+<figure class="fig">
+<img src="https://analogsoft.ru/wp-content/uploads/2022/07/IDLE.png" width="650" alt=""/>
+<figcaption>Пример того как выглядит IDLE</figcaption>
+</figure>
+<button id="btn">Ознакомлен</button>
+<script>
+btn.onclick = () => alert("Молодец! Теперь ты true программист!");
+</script>
+</body>
+</html>
